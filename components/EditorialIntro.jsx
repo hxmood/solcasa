@@ -61,10 +61,10 @@ export default function EditorialIntro() {
         <div data-aos="fade-left" data-aos-duration="1000" className="lg:col-span-7 relative">
           <div className="grid grid-cols-12 gap-space-md items-end">
             {/* Master Suite Panorama Image */}
-            <div className="col-span-8 overflow-hidden rounded-DEFAULT shadow-xl">
+            <div className="col-span-12 md:col-span-8 overflow-hidden rounded-DEFAULT shadow-xl">
               <img
                 alt="Warm sunlit luxury master bedroom at Solcasa overlooking misty highland forest canopy"
-                className="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                className="w-full h-[280px] sm:h-[380px] md:h-[460px] object-cover hover:scale-105 transition-transform duration-700 ease-out"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGBvmGIOa_kP7KZs2gwLQL9EEd6bipDxtRUyA0YmE5ilSNxMWl75GTLr5GHOzTUpzzyIvlGFYcdgk5MpUwn--UK9519sukLZlu1ua-9Gu7kePjE4nPIK56RrMIrfaNlwoBeTaj3oNSbR-sWgS33LfG6cD1pN3cpCU7rlGjzcddzL5ke28fBC6JUcgcJnlaYSwG89k979CI3jH7LaI_NLT0XnCw09RUCut8a9TOwHunfOQrIqxtTfZf"
               />
               <div className="p-space-sm bg-surface-container-lowest flex justify-between items-center text-on-surface-variant">
@@ -78,7 +78,7 @@ export default function EditorialIntro() {
             </div>
 
             {/* Verandah Balcony Overlap Image */}
-            <div data-aos="zoom-in" data-aos-delay="200" className="col-span-4 -ml-space-md mb-space-lg relative z-10 shadow-2xl overflow-hidden rounded-DEFAULT bg-surface">
+            <div data-aos="zoom-in" data-aos-delay="200" className="hidden md:block md:col-span-4 -ml-space-md mb-space-lg relative z-10 shadow-2xl overflow-hidden rounded-DEFAULT bg-surface">
               <img
                 alt="Artisanal wooden balcony verandah with steamy mountain tea, journal and panoramic plantation view"
                 className="w-full h-[320px] object-cover hover:scale-105 transition-transform duration-700 ease-out"
