@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-surface-container-low mt-space-4xl">
+    <footer className="w-full max-w-full bg-surface-container-low mt-space-4xl overflow-hidden">
       <div className="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-3xl pb-space-2xl">
         <div className="text-center mb-space-3xl">
           <p className="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em] mb-space-xs">
@@ -106,9 +106,9 @@ export default function Footer() {
               className="space-y-space-xs pt-space-2xs"
               onSubmit={(e) => e.preventDefault()}
             >
-              <div className="flex items-center">
+              <div className="flex items-center w-full max-w-full">
                 <input
-                  className="w-full bg-surface-container-lowest px-space-md py-space-sm font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-bright rounded-DEFAULT"
+                  className="w-full min-w-0 bg-surface-container-lowest px-space-md py-space-sm font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-bright rounded-DEFAULT"
                   placeholder="Your email address"
                   type="email"
                 />

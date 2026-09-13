@@ -2,7 +2,7 @@
 
 export default function GettingHere() {
   return (
-    <section id="getting-here" className="w-full bg-surface-container py-space-4xl">
+    <section id="getting-here" className="w-full max-w-full bg-surface-container py-space-4xl overflow-hidden">
       <div className="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
           {/* Left: Editorial Route Narrative */}

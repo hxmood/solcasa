@@ -3,7 +3,7 @@
 export default function EditorialIntro() {
   return (
     <section
-      className="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop py-space-4xl"
+      className="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop py-space-4xl overflow-hidden"
       id="editorial-intro"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">

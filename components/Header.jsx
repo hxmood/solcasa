@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30">
+      <header className="fixed top-0 left-0 w-full max-w-[100vw] z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30">
         <div className="h-20 max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-space-md hover:opacity-90 transition-opacity">

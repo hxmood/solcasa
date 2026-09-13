@@ -79,7 +79,7 @@ export default function GalleryPage() {
     <>
       <Header />
 
-      <main className="w-full pt-20 bg-surface min-h-screen text-on-surface">
+      <main className="w-full max-w-full pt-20 bg-surface min-h-screen text-on-surface overflow-x-hidden">
         {/* HERO SECTION */}
         <section className="relative w-full bg-surface-container-low border-b border-surface-container py-space-3xl lg:py-space-4xl overflow-hidden">
           <div className="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop relative z-10">
