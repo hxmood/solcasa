@@ -1,26 +1,239 @@
 @import "tailwindcss";
+@import "aos/dist/aos.css";
+@import "lenis/dist/lenis.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-on-secondary: #ffffff;
+  --color-on-surface: #1b1c19;
+  --color-on-tertiary-fixed-variant: #594228;
+  --color-primary: #0d250a;
+  --color-background: #fbf9f4;
+  --color-tertiary-fixed: #ffddb9;
+  --color-on-primary-container: #89a680;
+  --color-on-primary-fixed-variant: #334d2e;
+  --color-secondary-container: #d8e8c8;
+  --color-surface-bright: #fbf9f4;
+  --color-on-tertiary-fixed: #291803;
+  --color-inverse-on-surface: #f2f1ec;
+  --color-surface-container-low: #f5f3ee;
+  --color-primary-container: #223b1e;
+  --color-surface: #fbf9f4;
+  --color-on-secondary-fixed: #131f0b;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #eae8e3;
+  --color-on-tertiary-container: #b79978;
+  --color-primary-fixed: #ccebc1;
+  --color-primary-fixed-dim: #b1cfa7;
+  --color-on-error-container: #93000a;
+  --color-secondary-fixed: #d8e8c8;
+  --color-surface-variant: #e4e2dd;
+  --color-error: #ba1a1a;
+  --color-outline-variant: #c3c8bd;
+  --color-on-secondary-fixed-variant: #3d4b34;
+  --color-outline: #73796f;
+  --color-error-container: #ffdad6;
+  --color-inverse-surface: #30312e;
+  --color-tertiary: #2e1c06;
+  --color-surface-container: #f0eee9;
+  --color-surface-dim: #dbdad5;
+  --color-on-surface-variant: #434840;
+  --color-tertiary-fixed-dim: #e2c19e;
+  --color-on-error: #ffffff;
+  --color-inverse-primary: #b1cfa7;
+  --color-on-secondary-container: #5a6950;
+  --color-surface-tint: #4a6544;
+  --color-secondary: #54634a;
+  --color-tertiary-container: #463118;
+  --color-on-primary-fixed: #082107;
+  --color-on-background: #1b1c19;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-secondary-fixed-dim: #bcccad;
+  --color-surface-container-highest: #e4e2dd;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-space-3xl: 6rem;
+  --spacing-space-4xl: 8rem;
+  --spacing-gutter-mobile: 1.25rem;
+  --spacing-gutter-desktop: 3rem;
+  --spacing-container-max: 88rem;
+
+  --font-label-caps: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display-xl-mobile: "Playfair Display", Georgia, serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-headline-lg-mobile: "Playfair Display", Georgia, serif;
+  --font-label-ui: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-subheading-lg: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body-md: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display-xl: "Playfair Display", Georgia, serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf9f4;
+  color: #1b1c19;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+/* Thin visible custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0eee9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #54634a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #223b1e;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #54634a #f0eee9;
+}
+
+/* Exact typography classes from Stitch */
+.font-label-caps {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-label-caps {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-body-lg {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-body-md {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-body-sm {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.font-label-ui {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-label-ui {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.font-subheading-lg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.text-subheading-lg {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.font-display-xl {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.text-display-xl {
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+.text-display-xl-mobile {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.font-headline-lg {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.text-headline-lg {
+  font-size: 44px;
+  line-height: 52px;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+}
+.text-headline-lg-mobile {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.font-headline-md {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.text-headline-md {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+
+.font-headline-sm {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.text-headline-sm {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0em;
+  font-weight: 500;
+}
+
+.rounded-DEFAULT {
+  border-radius: 0.125rem;
 }
