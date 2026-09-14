@@ -82,7 +82,7 @@ export default function GettingHere() {
                 </a>
                 <a
                   className="inline-flex items-center justify-center px-space-lg py-space-sm bg-surface-container text-primary font-label-ui text-label-ui uppercase tracking-[0.18em] rounded-DEFAULT hover:bg-surface-container-high transition-colors"
-                  href="tel:+914936284100"
+                  href="tel:+918157009613"
                 >
                   <span className="material-symbols-outlined text-[18px] mr-2">
                     call

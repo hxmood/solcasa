@@ -27,7 +27,7 @@ export default function HeroSection() {
           className="inline-flex items-center gap-space-xs px-space-md py-1 rounded-DEFAULT bg-surface/10 backdrop-blur-md text-surface tracking-[0.28em] font-label-caps text-label-caps uppercase mb-space-lg shadow-sm"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse" />
-          HOMESTAY · WAYANAD
+          SOLCASA WAYANAD
         </div>
 
         {/* Main Headline */}

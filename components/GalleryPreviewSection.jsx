@@ -25,17 +25,12 @@ export default function GalleryPreviewSection() {
       src: "/gallery/solcasa_dining_terrace_1789280770977.jpg",
       span: "md:col-span-4 h-[280px] md:h-[340px]",
     },
-    {
-      title: "Artisanal Bath Sanctuary",
-      category: "Ensuite Sanctuaries",
-      src: "/gallery/solcasa_bath_sanctuary_1789281087769.jpg",
-      span: "md:col-span-4 h-[280px] md:h-[340px]",
-    },
+    
     {
       title: "Highland Bonfire Hearth",
       category: "Evenings & Starlight",
       src: "/gallery/solcasa_evening_bonfire_1789280793148.jpg",
-      span: "md:col-span-4 h-[280px] md:h-[340px]",
+      span: "md:col-span-8 h-[280px] md:h-[340px]",
     },
   ];
 
