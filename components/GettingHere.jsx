@@ -71,7 +71,7 @@ export default function GettingHere() {
               <div className="pt-space-xs flex flex-wrap gap-space-md">
                 <a
                   className="inline-flex items-center justify-center px-space-lg py-space-sm bg-primary text-on-primary font-label-ui text-label-ui uppercase tracking-[0.18em] rounded-DEFAULT hover:bg-primary-container transition-colors shadow-sm"
-                  href="https://maps.app.goo.gl/4FXwNy4jroKkoH9d6"
+                  href="https://maps.app.goo.gl/QVb37JKdqJAqmyNd6"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

@@ -62,7 +62,7 @@ export default function StayWithUs() {
             </a>
             <a
               className="w-full sm:w-auto inline-flex items-center justify-center px-space-xl py-space-sm bg-surface/10 backdrop-blur-md text-surface font-label-ui text-label-ui uppercase tracking-[0.2em] rounded-DEFAULT hover:bg-surface/20 transition-colors"
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/QVb37JKdqJAqmyNd6"
               rel="noopener noreferrer"
               target="_blank"
             >
