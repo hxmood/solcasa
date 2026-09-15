@@ -8,7 +8,7 @@ export default function ExploreWayanad() {
       title: "Muneeshwaran Hills",
       desc: "Panoramic high ridge trails and sweeping valley cloudscapes.",
       tag: "Trekking & Views",
-      distance: "~12 km",
+      distance: "~3.6 km",
     },
     {
       icon: "park",
@@ -16,7 +16,7 @@ export default function ExploreWayanad() {
       title: "Komachi Park",
       desc: "Manicured gardens, peaceful tree groves, and quiet walking paths.",
       tag: "Gentle Stroll",
-      distance: "~9 km",
+      distance: "~6.3 km",
     },
     {
       icon: "cruelty_free",
@@ -24,7 +24,7 @@ export default function ExploreWayanad() {
       title: "Tholpetty Wildlife Sanctuary",
       desc: "Wild elephants, leopards, deer, and rich jungle biodiversity.",
       tag: "Jeep Safari",
-      distance: "~22 km",
+      distance: "~34 km",
     },
     {
       icon: "water",
@@ -32,7 +32,7 @@ export default function ExploreWayanad() {
       title: "Banasura Sagar Dam",
       desc: "India's largest earthen dam nestled beneath dramatic peaks.",
       tag: "Speedboating",
-      distance: "~28 km",
+      distance: "~31 km",
     },
     {
       icon: "kayaking",
@@ -40,7 +40,7 @@ export default function ExploreWayanad() {
       title: "Pookode Lake",
       desc: "Natural freshwater lake enveloped in evergreen forest foliage.",
       tag: "Paddle Boating",
-      distance: "~36 km",
+      distance: "~53.3 km",
     },
     {
       icon: "landscape",
@@ -48,7 +48,7 @@ export default function ExploreWayanad() {
       title: "Chembra Peak",
       desc: "Legendary heart-shaped lake resting amidst cloud forests.",
       tag: "High Trekking",
-      distance: "~42 km",
+      distance: "~62.9 km",
     },
     {
       icon: "history_edu",
@@ -56,7 +56,7 @@ export default function ExploreWayanad() {
       title: "Edakkal Caves",
       desc: "Ancient Neolithic petroglyphs carved on high stone cliff faces.",
       tag: "Archaeology",
-      distance: "~45 km",
+      distance: "~52 km",
     },
     {
       icon: "waves",
@@ -64,7 +64,7 @@ export default function ExploreWayanad() {
       title: "Soochipara Waterfalls",
       desc: "Thundering three-tiered falls with secluded rock pools.",
       tag: "Forest Swim",
-      distance: "~48 km",
+      distance: "~63.8 km",
     },
     {
       icon: "sailing",
@@ -72,7 +72,7 @@ export default function ExploreWayanad() {
       title: "Kuruva Island",
       desc: "Dense protected delta archipelago on the pristine Kabini river.",
       tag: "Bamboo Rafting",
-      distance: "~18 km",
+      distance: "~30.3 km",
     },
     {
       icon: "visibility",
@@ -80,7 +80,7 @@ export default function ExploreWayanad() {
       title: "900 Kandi",
       desc: "Panoramic glass skywalk suspended over deep wild jungle ravines.",
       tag: "Skywalk & Off-road",
-      distance: "~44 km",
+      distance: "~61.7 km",
     },
   ];
 
